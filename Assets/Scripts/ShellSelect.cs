@@ -4,15 +4,35 @@ using UnityEngine;
 
 public class ShellSelect : MonoBehaviour
 {
-   // make a public class that has a switch case with all the possible bullets with an int to keep track of the bullet value
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public void shellToFire(int shellSelected)
     {
+        Debug.Log(shellSelected);
+    }
+    public void shellSelection ()
+    {
+        /*switch (shellSelected)
+        {
+            case 1:
+            
+            break;
+
+            case 2:
+            
+            break;
+
+            case 3:
+            
+            break;
+
+            case 4:
+            
+            break;
+
+            default:
+            shellSelected = 1;
+            break;
         
+        }*/
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -11,12 +12,16 @@ public class TankControl2 : MonoBehaviour
     GameObject bulletToFire;
     [SerializeField]
     Transform firePoint;
-     
-    
+    [SerializeField]
+    GameObject killscreen;
+
     private float pivotSpeed = 3;
     private float movementSpeed = 5;
     public float shootingForce = 10;
     public Turn turn;
+
+
+
 
 
 
@@ -52,4 +57,13 @@ public class TankControl2 : MonoBehaviour
             }
         }
     }
+    /*private void OnTriggerEnter2D(OnTriggerEnter2D killed)
+    {
+        if (killed.CompareTag("bullet"))
+        {
+            FindObjectOfType<AudioManager>().Play("killed");
+            killscreen.SetActive(true);
+        }
+
+    }*/
 }

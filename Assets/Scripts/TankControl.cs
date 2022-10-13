@@ -11,6 +11,9 @@ public class TankControl : MonoBehaviour
     GameObject bulletToFire;
     [SerializeField]
     Transform firePoint;
+    [SerializeField]
+    GameObject killscreen;
+
 
     private float pivotSpeed = 3;
     private float movementSpeed = 5;
@@ -53,4 +56,13 @@ public class TankControl : MonoBehaviour
             }
         }
     }
+    /*private void OnTriggerEnter2D(OnTriggerEnter2D killed)
+    {
+        if (killed.CompareTag("bullet"))
+        {
+            FindObjectOfType<AudioManager>().Play("killed");
+            killscreen.SetActive(true);
+        }
+
+    }*/
 }
