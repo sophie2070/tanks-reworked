@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: tilesheet_10_min_chal_2
+  m_Name: new tile sheet tanks_5
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 1909170721, guid: 6ea0e609531755a4ab67a0ad2ddcea7d, type: 3}
+  m_Sprite: {fileID: -50463490, guid: da7016bfd4c96c243a83c5e3de366f4a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

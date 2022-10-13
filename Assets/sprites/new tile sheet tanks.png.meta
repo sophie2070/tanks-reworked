@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 659d945a104114e49bc667868f85dea1
+guid: da7016bfd4c96c243a83c5e3de366f4a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tilesheet ground tank_0
+      name: new tile sheet tanks_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fd29b6cccae6eb4980c9e6155e6663d
-      internalID: -1944655656
+      spriteID: 12f16fdd7cefb8a42bab359588190299
+      internalID: -1898576488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesheet ground tank_1
+      name: new tile sheet tanks_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb9ce9d6c8d9c54c875973e4c1f6cf1
+      internalID: 1869572912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: new tile sheet tanks_2
       rect:
         serializedVersion: 2
         x: 0
@@ -152,14 +173,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abf90eb3629661d499572a607df060ac
-      internalID: -1972286354
+      spriteID: 23f4300c643e5fc40a32e49a37ea2e09
+      internalID: -1482450753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesheet ground tank_2
+      name: new tile sheet tanks_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b27e3a67de5064f93d48a4312e86c7
+      internalID: -1847868435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: new tile sheet tanks_4
       rect:
         serializedVersion: 2
         x: 0
@@ -173,8 +215,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cadfef5c1c6486449144b2353910791
-      internalID: 677528551
+      spriteID: 53d2bd230b0b062478c6a08ff9ab0738
+      internalID: -1253994595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: new tile sheet tanks_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300eb71d19023084f8d8145a301fb69d
+      internalID: -50463490
       vertices: []
       indices: 
       edges: []
@@ -190,9 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tilesheet ground tank_2: 677528551
-      tilesheet ground tank_1: -1972286354
-      tilesheet ground tank_0: -1944655656
+      new tile sheet tanks_3: -1847868435
+      new tile sheet tanks_4: -1253994595
+      new tile sheet tanks_5: -50463490
+      new tile sheet tanks_0: -1898576488
+      new tile sheet tanks_2: -1482450753
+      new tile sheet tanks_1: 1869572912
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
