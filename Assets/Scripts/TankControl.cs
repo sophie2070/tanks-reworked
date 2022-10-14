@@ -56,13 +56,13 @@ public class TankControl : MonoBehaviour
             }
         }
     }
-    /*private void OnTriggerEnter2D(OnTriggerEnter2D killed)
+    private void OnTriggerEnter2D(Collider2D killed)
     {
-        if (killed.CompareTag("bullet"))
+        if (killed.gameObject.tag == "bullet")
         {
             FindObjectOfType<AudioManager>().Play("killed");
             killscreen.SetActive(true);
         }
 
-    }*/
+    }
 }

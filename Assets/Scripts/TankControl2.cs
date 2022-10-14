@@ -20,11 +20,6 @@ public class TankControl2 : MonoBehaviour
     public float shootingForce = 10;
     public Turn turn;
 
-
-
-
-
-
     public void SetPower(float firepower)
     {
         shootingForce = firepower;
@@ -40,7 +35,6 @@ public class TankControl2 : MonoBehaviour
             {
                 GameObject b = Instantiate(bulletToFire, firePoint.position, firePoint.rotation);
                 b.GetComponent<Rigidbody2D>().AddForce(barrelRotator.up * shootingForce, ForceMode2D.Impulse);
-
                 
                     turn.PlayerTurn = true;
                 
@@ -57,13 +51,12 @@ public class TankControl2 : MonoBehaviour
             }
         }
     }
-    /*private void OnTriggerEnter2D(OnTriggerEnter2D killed)
+    private void OnTriggerEnter2D(Collider2D killed)
     {
-        if (killed.CompareTag("bullet"))
+        if (killed.gameObject.tag == "bullet")
         {
             FindObjectOfType<AudioManager>().Play("killed");
             killscreen.SetActive(true);
         }
-
-    }*/
+    }
 }

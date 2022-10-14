@@ -4,35 +4,32 @@ using UnityEngine;
 
 public class ShellSelect : MonoBehaviour
 {
-
+    public int shellSelected;
     public void shellToFire(int shellSelected)
     {
-        Debug.Log(shellSelected);
-    }
-    public void shellSelection ()
-    {
-        /*switch (shellSelected)
+        switch (shellSelected)
         {
             case 1:
-            
-            break;
+
+                break;
 
             case 2:
-            
-            break;
+
+                break;
 
             case 3:
-            
-            break;
+
+                break;
 
             case 4:
-            
-            break;
+
+                break;
 
             default:
-            shellSelected = 1;
-            break;
-        
-        }*/
+                shellSelected = 1;
+                break;
+
+        }
+        Debug.Log(shellSelected);
     }
 }
