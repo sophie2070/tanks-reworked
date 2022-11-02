@@ -836,7 +836,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371154169}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.31, y: 0.92, z: 1}
   m_ConstrainProportionsScale: 0
@@ -978,7 +978,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 73ee16f18942b3d44bfbd0326b774e86, type: 2}
   m_audioClip: {fileID: 8300000, guid: 72c001df7fd887746a224d45ea55ee99, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.095
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1329,6 +1329,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &579818353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579818346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efeca04da7d741c48bc1e42b8372a26c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  killscreen: {fileID: 1614897432}
 --- !u!95 &579818354
 Animator:
   serializedVersion: 4
@@ -2181,22 +2194,24 @@ MonoBehaviour:
   m_Placeholder: {fileID: 0}
   m_ItemText: {fileID: 7250926}
   m_ItemImage: {fileID: 0}
-  m_Value: 1
+  m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: ' HE Shell'
+    - m_Text: Select Ammunition
       m_Image: {fileID: 0}
-    - m_Text: AP Shell
+    - m_Text: HEShell
       m_Image: {fileID: 0}
-    - m_Text: pool shot
+    - m_Text: APShell
+      m_Image: {fileID: 0}
+    - m_Text: PoolShot
       m_Image: {fileID: 0}
     - m_Text: Nuke
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1887634018}
-        m_TargetAssemblyTypeName: ShellSelect, Assembly-CSharp
+      - m_Target: {fileID: 41900457323146296}
+        m_TargetAssemblyTypeName: TankControl2, Assembly-CSharp
         m_MethodName: shellToFire
         m_Mode: 0
         m_Arguments:
@@ -2304,7 +2319,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: AP Shell
+  m_text: Select Ammunition
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2457,7 +2472,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614897432}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.32, y: 0.92, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2896,6 +2911,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee56f66de4df98048b3b7927eb319185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heShell: {fileID: 0}
+  apShell: {fileID: 0}
+  poolShot: {fileID: 0}
+  nuke: {fileID: 0}
+  shellSelected: 0
 --- !u!1 &2004028984
 GameObject:
   m_ObjectHideFlags: 0
@@ -3612,8 +3632,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barrelRotator: {fileID: 145440179}
-  bulletToFire: {fileID: 4102083739625186052, guid: 8f675f2d479f3ca4cabd2421318f5b34, type: 3}
   firePoint: {fileID: 2113112765}
   killscreen: {fileID: 371154169}
+  heShell: {fileID: 4102083739625186052, guid: 3ee805ce00a46fc4189419f2d740ea03, type: 3}
+  apShell: {fileID: 4102083739625186052, guid: 8f675f2d479f3ca4cabd2421318f5b34, type: 3}
+  poolShot: {fileID: 4102083739625186052, guid: f39ba6ffa00726640ad2d6afc95c8638, type: 3}
+  nuke: {fileID: 4102083739625186052, guid: 3bebb11140f627240ac70965216ebf89, type: 3}
   shootingForce: 10
+  shellSelected: 0
   turn: {fileID: 131577779}
+--- !u!114 &41900457323146297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41900457323146288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efeca04da7d741c48bc1e42b8372a26c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  killscreen: {fileID: 371154169}

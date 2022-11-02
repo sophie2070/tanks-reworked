@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class ShellSelect : MonoBehaviour
 {
+    [SerializeField]
+    GameObject heShell;
+    [SerializeField]
+    GameObject apShell;
+    [SerializeField]
+    GameObject poolShot;
+    [SerializeField]
+    GameObject nuke;
+
+
     public int shellSelected;
     public void shellToFire(int shellSelected)
     {
