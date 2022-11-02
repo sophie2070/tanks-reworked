@@ -28,49 +28,47 @@ public class TankControl2 : MonoBehaviour
     public int shellSelected;
     public Turn turn;
     public int movementType = -1;
+    int ShellSelected;
 
     public void SetPower(float firepower)
     {
         shootingForce = firepower;
     }
-    public void shellToFire(int shellSelected)
+    void shellToFire(int shellSelected)
     {
+        ShellSelected = shellSelected;
             switch (shellSelected)
             {
                 case 1:
-                if (Input.GetKeyDown(KeyCode.B))
-                {
+                
                     Instantiate(heShell, firePoint.position, firePoint.rotation).GetComponent<Rigidbody2D>().AddForce(barrelRotator.up * shootingForce, ForceMode2D.Impulse);
 
                     turn.PlayerTurn = true;
-                }
+                
                     break;
 
                 case 2:
-                if (Input.GetKeyDown(KeyCode.B))
-                {
+                
                     Instantiate(apShell, firePoint.position, firePoint.rotation).GetComponent<Rigidbody2D>().AddForce(barrelRotator.up * shootingForce, ForceMode2D.Impulse);
 
                     turn.PlayerTurn = true;
-                }
+                
                     break;
 
                 case 3:
-                if (Input.GetKeyDown(KeyCode.B))
-                {
+                
                     Instantiate(poolShot, firePoint.position, firePoint.rotation).GetComponent<Rigidbody2D>().AddForce(barrelRotator.up * shootingForce, ForceMode2D.Impulse);
 
                     turn.PlayerTurn = true;
-                }
+                
                     break;
 
                 case 4:
-                if (Input.GetKeyDown(KeyCode.B))
-                {
+                
                     Instantiate(nuke, firePoint.position, firePoint.rotation).GetComponent<Rigidbody2D>().AddForce(barrelRotator.up * shootingForce, ForceMode2D.Impulse);
 
                     turn.PlayerTurn = true;
-                }
+                
                     break;
 
                 default:
@@ -82,6 +80,11 @@ public class TankControl2 : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.B))
+        {
+            shellToFire(ShellSelected);
+        }
+
         if (turn.PlayerTurn == false)
         {      
             barrelRotator.RotateAround(Vector3.forward, Input.GetAxis("Vertical") * pivotSpeed * Time.deltaTime);
