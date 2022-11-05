@@ -5,12 +5,6 @@ using UnityEngine;
 public class HEShell : MonoBehaviour
 {
     float bulletTtl = 5;
-    [SerializeField]
-    GameObject HEExplosion;
-    [SerializeField]
-    Transform spawnpoint;
-
-    
    
     void Update()
     {
@@ -24,7 +18,7 @@ public class HEShell : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     { 
         FindObjectOfType<AudioManager>().Play("BulletLand");
-        //GameObject x = Instantiate(HEExplosion, spawnpoint.position);
         Destroy(gameObject);
     }
+
 }

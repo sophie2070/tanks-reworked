@@ -5,14 +5,16 @@ using UnityEngine;
 public class KillDetection : MonoBehaviour
 {
     [SerializeField]
-    GameObject killscreen;
+    GameObject deathpanel;
+    [SerializeField]
+    GameObject normalui;
     void OnCollisionEnter2D(Collision2D killed)
     {
         if (killed.gameObject.tag == "bullet")
         {
             FindObjectOfType<AudioManager>().Play("killed");
-            killscreen.SetActive(true);
-            Debug.Log("hit");
+            deathpanel.SetActive(!deathpanel.activeSelf);
+            normalui.SetActive(!normalui.activeSelf);
         }
     }
 }

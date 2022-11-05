@@ -17,7 +17,7 @@ public class Nuke : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     { 
-        FindObjectOfType<AudioManager>().Play("BulletLand");
+        FindObjectOfType<AudioManager>().Play("NukeLand");
         Destroy(gameObject);
     }
 }

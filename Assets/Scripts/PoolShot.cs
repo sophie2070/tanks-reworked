@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PoolShot : MonoBehaviour
 {
-    float bulletTtl = 5;
+    float bulletTtl = 3f;
     
     void Update()
     {
@@ -15,8 +15,12 @@ public class PoolShot : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        FindObjectOfType<AudioManager>().Play("ricocet");
+        FindObjectOfType<AudioManager>().Play("ricochet");
+        if (collision.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
     }
 }

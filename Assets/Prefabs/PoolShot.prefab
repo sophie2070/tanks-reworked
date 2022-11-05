@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4102083739625186073}
   - component: {fileID: 4102083739625186054}
   - component: {fileID: 4102083739625186055}
-  - component: {fileID: 7500205772035476553}
+  - component: {fileID: -4111745248453420837}
   m_Layer: 0
   m_Name: PoolShot
   m_TagString: bullet
@@ -124,7 +124,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7500205772035476553
+--- !u!114 &-4111745248453420837
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,6 +133,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4102083739625186052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42e289558d60cf14ba4dac4d729d3e8d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2f2e36b947a3a48bcdbc454d87c0d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
