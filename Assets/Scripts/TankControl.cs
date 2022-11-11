@@ -30,7 +30,7 @@ public class TankControl : MonoBehaviour
     //public int movementType = 0;
     int ShellSelected;
 
-    //public Animator moving;
+    public Animator anim;
     public void SetPower(float firepower)
     {
         shootingForce = firepower;
@@ -85,7 +85,6 @@ public class TankControl : MonoBehaviour
 
     void Update()
     {
-        //moving.SetFloat("horizontal", movementType);
 
         if (turn.PlayerTurn == true)
         {
@@ -99,21 +98,21 @@ public class TankControl : MonoBehaviour
             if (Input.GetKey(KeyCode.D))
             {
                 transform.Translate(Vector2.right * movementSpeed * Time.deltaTime);
-                //movementType = 1;
+                anim.SetBool("moving", true);
             }
             if (Input.GetKeyUp(KeyCode.D))
             {
-                //movementType = -1;
+                anim.SetBool("moving", false); 
             }
 
             if (Input.GetKey(KeyCode.A))
             {
                 transform.Translate(Vector2.left * movementSpeed * Time.deltaTime);
-                //movementType = 1;
+                anim.SetBool("moving", true);
             }
             if (Input.GetKey(KeyCode.A))
             {
-                //movementType = -1;
+                anim.SetBool("moving", false);
             }
         }
     }

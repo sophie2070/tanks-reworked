@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bbb1e86c92042134f98127055da0c831
+guid: 599e470ce4d811d459121937b81a0bea
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,6 +101,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -119,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4315c06599d513499cdab46c8b8fe77
-      internalID: 753321175
+      spriteID: b9d718fceab15de47a20fdb41739d24f
+      internalID: 1838592547
       vertices: []
       indices: 
       edges: []
@@ -140,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e6f40f3f30a5c948b71cb8d6f977741
-      internalID: 972961433
+      spriteID: 2a1ba8074c5433b4d9220bcb9c50eefa
+      internalID: -1761035402
       vertices: []
       indices: 
       edges: []
@@ -161,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40e8cd4d845b6064d8db9e30a6bdfd9e
-      internalID: 202491943
+      spriteID: 50d82dbab2f207c4882b90c7c6b54695
+      internalID: 851541006
       vertices: []
       indices: 
       edges: []
@@ -178,9 +190,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tank animation sprite 1_1: 972961433
-      tank animation sprite 1_2: 202491943
-      tank animation sprite 1_0: 753321175
+      tank animation sprite 1_1: -1761035402
+      tank animation sprite 1_2: 851541006
+      tank animation sprite 1_0: 1838592547
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
