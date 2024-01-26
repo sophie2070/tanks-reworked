@@ -22,12 +22,12 @@ public class TankControl : MonoBehaviour
     [SerializeField]
     GameObject nuke;
 
+
     private float pivotSpeed = 3;
     private float movementSpeed = 5;
     public float shootingForce = 10;
     public int shellSelected;
     public Turn turn;
-    //public int movementType = 0;
     int ShellSelected;
 
     public Animator anim;
@@ -94,7 +94,6 @@ public class TankControl : MonoBehaviour
             {
                 shellToFire(ShellSelected);
             }
-
             if (Input.GetKey(KeyCode.D))
             {
                 transform.Translate(Vector2.right * movementSpeed * Time.deltaTime);
@@ -104,7 +103,6 @@ public class TankControl : MonoBehaviour
             {
                 anim.SetBool("moving", false); 
             }
-
             if (Input.GetKey(KeyCode.A))
             {
                 transform.Translate(Vector2.left * movementSpeed * Time.deltaTime);
